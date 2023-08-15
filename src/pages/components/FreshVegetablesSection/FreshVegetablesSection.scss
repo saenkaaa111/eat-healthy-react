@@ -1,0 +1,89 @@
+@import '../../../variables';
+
+#fresh-vegetables{
+    display: flex;
+    justify-content: center;
+    padding: 200px 120px 0 135px;
+    height: 722px;
+    gap: 70px;
+    align-items: center;
+    max-width: 2000px;
+    
+    h2{
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    p{
+        margin-bottom: 40px;
+        font-size: 22px;
+        
+    }
+
+    .fresh-vegetables-cards{
+        display: flex;
+    }
+    .fresh-vegetables-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;    
+    }
+}
+
+@media(max-width: 1200px){
+    #fresh-vegetables{
+        padding: 0 30px 0 30px;
+        margin-top: -180px;
+        height: auto;
+        gap:0;
+        flex-direction: column;
+        
+        .fresh-vegetables-cards{
+            position: relative;
+            top: 390px;
+            left: 150px;
+        }
+
+        h2{
+            text-align: center;
+            margin: 0 auto 30px auto;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 250px;
+        }
+        img {
+            width: 45%;
+            height: 55%;
+    }
+
+    }
+}
+
+@media (max-width: 800px){
+    
+    #fresh-vegetables{ 
+        .fresh-vegetables-cards {
+            position: relative;
+            top: 450px;
+            left: 170px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    
+    #fresh-vegetables {
+        padding: 40px 30px 0 30px;
+
+        .fresh-vegetables-cards {
+            position: relative;
+            top: 510px;
+            left: 90px;
+        }
+        img {
+            width: 55%;
+            height: 55%;
+        }   
+    }
+}

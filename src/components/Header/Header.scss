@@ -1,0 +1,47 @@
+@import '../../variables';
+
+header {
+    padding: 33px 54px 0px 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+    .nav-link{
+        color: #2C3847;
+        &.last{
+            margin-bottom: 20px;
+        }
+        
+        &.green{
+            color: #5FB848;
+
+        }
+    }
+
+    .navi{
+        display: flex;
+
+    }
+    .right{
+        align-items: center;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+        //margin-right: 379px;
+    }
+
+    .logo{
+        margin: auto  148px auto auto;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        font-family: $logo-font;
+    }
+}

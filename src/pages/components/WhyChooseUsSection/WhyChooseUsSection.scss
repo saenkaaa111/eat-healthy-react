@@ -1,0 +1,109 @@
+@import '../../../variables';
+
+#why-choose-us{
+    
+    padding: 20px 200px 0 230px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: $main-font;
+
+    
+    p{
+        color: #3B433E;
+        text-align: center;
+        line-height: 34px;
+        margin-bottom: 62px;
+        
+        &.p-numbers{
+            color: #545454;
+            font-size: 20px;
+            font-weight: 760;
+            margin-bottom: 0;
+        
+        
+        }
+    }
+
+    h3{
+        margin-bottom: 25px;
+        
+        &.num{
+            font-family: $bold-font;
+            color: #000;
+            font-size: 44px;                
+            font-weight: 780;  
+            text-align: center;
+        }
+    }
+    
+    .content{
+        display: flex;
+        justify-content:space-between;
+        gap: 100px;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 750;
+        line-height: 28px;
+        margin-bottom: 25px;
+        //margin-bottom: 60px;
+    }
+
+    .numbers{
+        display: flex;
+        justify-content:space-between;
+        gap: 150px;
+    }
+    .img-bottom{
+        margin-bottom: 28px;
+    }
+    
+}
+
+
+
+
+@media(max-width: 1200px){
+    #why-choose-us{
+        padding: 20px 40px 0 40px;
+
+        h2{
+            margin-bottom: 15px;
+        }
+        h3{
+            font-size: 18px;
+            margin-bottom: 15px;
+            &.num{
+                font-size: 24px;
+            }
+        }
+        p{
+            margin-bottom: 32px;
+            &.p-numbers{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        .img-bottom{
+            margin-bottom: 28px;
+        }
+        .content{
+            gap: 20px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .new-line{
+            word-spacing: 10px;
+        }
+
+        .numbers{
+            gap: 30px;
+        }
+    }
+}

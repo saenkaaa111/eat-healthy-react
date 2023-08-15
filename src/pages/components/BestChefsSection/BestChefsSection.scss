@@ -1,0 +1,90 @@
+@import '../../../variables';
+
+#best-chefs{
+    display: flex;
+    justify-content: center;
+    padding: 130px 40px 0 135px;
+    gap: 35px;
+    align-items: flex-start;
+    max-width: 2000px;
+    h2{
+        margin-bottom: 35px;
+        text-align: left;
+        line-height: 70px;
+    }
+
+    p{
+        font-size: 20px;
+        
+    }
+    .m-bottom{
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    .check{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        
+    }
+
+    .best-chefs-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;    
+    }
+    .direction{
+        display: flex;
+        align-items: baseline;
+        gap: 17px;
+    }
+    .im-width{
+        width: 20px;
+        height: 20px;
+
+    }
+    .best-chefs-cards{
+        position: relative;
+        top: -60px;
+    }
+}
+
+@media(max-width: 1200px){
+    #best-chefs {
+        padding: 70px 40px 0 40px;
+        gap: 0 ;  
+        flex-direction: column;   
+        
+        h2{
+            text-align: center; 
+            line-height: 50px;
+            margin: 0 auto 35px auto;
+        }
+        .m-bottom{
+            text-align: center; 
+        }
+        .best-chefs-cards {
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+        }
+        .chef-foto{
+            width: 65%;
+            height: 65%;
+            position: relative;
+            left: 120px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+      
+
+    #best-chefs {
+        .chef-foto {
+            left: 60px;
+            top: 30px;
+        }
+    }
+}

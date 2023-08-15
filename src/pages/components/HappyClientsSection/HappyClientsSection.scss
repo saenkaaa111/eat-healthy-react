@@ -1,0 +1,123 @@
+@import '../../../variables';
+
+#happy-clients{
+    padding: 178px 180px 0 194px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h2{
+        margin-bottom: 47px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: -8px;
+    }
+    
+    p{
+        font-size: 18px;
+        font-weight: 750;
+        margin-left: 25px;
+        margin-right: 10px;
+        line-height: 30px;
+    }
+    .ava{
+        flex-shrink: 0;
+        box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px 0px 81px 0px #FFF;
+        background-color:#fff;
+        border: 1px solid #EBEBEB;
+        border-radius: 20px;
+        
+        &:first-child{
+            transition: all .4s ease;
+        }
+    }
+    .avatar-info{
+        font-size: 14px;
+        font-weight: 760;
+        margin-left: 0;
+    }
+
+    .avatars{
+        display: flex;
+        flex-shrink: 0;
+        //display: grid;
+        //grid-template-columns: 50% 50%;
+        gap: 15px;
+        margin-bottom: 50px;
+        max-width: 1050px;
+        overflow: hidden;
+    }
+    .avatar{
+        display: grid;
+        grid-template-columns: 26% 74%;
+        margin-bottom: 30px;
+        margin-top: 45px;
+        margin-left: 21px;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: flex-start;
+    }
+    .ava{
+        width: 514px;
+        height: 347px;
+    }
+    .icons{
+        display: flex;
+        
+
+    }
+    .arrows{
+        display: flex;
+        margin: 0 auto;
+        background: white;
+        border: white;
+    }
+    
+
+}
+
+
+
+
+@media(max-width: 1200px){
+    #happy-clients {
+    padding: 70px 40px 0 40px;
+
+    .avatars {
+        display: flex;
+        flex-shrink: 0;
+        //grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .ava {
+        width: auto; 
+        height: auto;
+    }
+    .avatar {
+        grid-template-columns: 30% 70%;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    .name {
+        
+        margin-left: 20px;
+    }
+
+    .arrows{
+        width: auto;
+        height: auto;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+
+}
+}

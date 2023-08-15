@@ -1,0 +1,101 @@
+@import '../../../variables';
+
+
+
+
+#hero{
+    display: flex;  
+    justify-content: center;
+    //height: 886px;  
+
+    h1{
+        font-family: $main-font;
+        font-size: 76px;
+        font-style: normal;
+        font-weight: 770;
+        line-height: 100px;
+        margin-bottom: 30px;
+    }
+
+    
+    p{
+        line-height: 34px;
+        margin-bottom: 50px;
+        //width: 504px;
+    }
+
+    .green-color{
+        color: #5FB848;
+    }
+    
+    .grid-block{
+        display: grid;
+        padding: 145px 135px 0 175px;
+        grid-template-columns: 60% 40%;
+        grid-auto-rows: 720px;
+        max-width: 2000px;
+
+    }
+    .hero-card{
+        position: relative;
+        right: 295px;
+        top: -214px;
+    }
+
+
+}
+
+@media(max-width: 1200px){
+    
+    
+
+    #hero{
+        
+        h1{
+            font-size: 40px;    
+            line-height: 50px;
+            margin-bottom: 330px;
+            text-align: center;
+            
+            
+            
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            margin: 0 0 0 240px;
+            position: absolute;
+            top: -350px;
+            left: 50px;
+        }
+        p{
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .grid-block{
+            grid-template-columns: 100%;
+            grid-auto-rows: auto;
+            padding: 40px 40px 0 40px
+        }
+    }
+}
+
+@media (max-width: 800px){
+    #hero img {
+        width: 400px;
+        height: 400px;
+        margin: 0 0 0 240px;
+        position: absolute;
+        top: -350px;
+    
+    }
+    
+}
+
+@media (max-width: 500px){
+    #hero img {
+        top: -440px;
+        left: 10px;
+    }
+
+}
